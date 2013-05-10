@@ -29,7 +29,8 @@ var basePath = src.slice(0, src.indexOf(thisFile));
 if (!window.Loader) {
   var path = basePath + 'tools/loader/loader.js';
   document.write('<script src="' + path + '"></script>');
-} 
-document.write('<script>Loader.load("' + scopeName + '")</script>');
+}
+//document.write('<script>Loader.load("' + scopeName + '")</script>');
+document.write('<script src="' + basePath + 'run-loader.js"></script>');
   
 })();
